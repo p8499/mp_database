@@ -1,0 +1,12 @@
+/**
+     * ID: crewuser
+     * Description: 班组用户关系
+     */
+CREATE VIEW V30031 AS SELECT 
+/*序号*/ t0.CUID CUID , 
+/*班组序号*/ t0.CUCWID CUCWID , 
+/*班组名称*/ ? CUCWNAME , 
+/*工作中心编号*/ ? CUWCMCU , 
+/*工作中心名称*/ ? CUWCDL01 , 
+/*用户序号*/ t0.CUUSID CUUSID , 
+/*用户姓名*/ ? CUUSNAME FROM F30031 t0;

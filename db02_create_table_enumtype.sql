@@ -1,0 +1,8 @@
+/**
+ * ID: enumtype
+ * Description: 枚举类型
+ */
+CREATE TABLE F0004 ( 
+/*枚举类型编号*/ ETID NVARCHAR2(4) , 
+/*枚举类型名称*/ ETNAME NVARCHAR2(8) );
+ALTER TABLE F0004 ADD CONSTRAINT F0004_PRIMARY PRIMARY KEY ( ETID );

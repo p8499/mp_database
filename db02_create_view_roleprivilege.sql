@@ -1,0 +1,12 @@
+/**
+     * ID: roleprivilege
+     * Description: 角色权限关系
+     */
+CREATE VIEW V00941 AS SELECT 
+/*序号*/ t0.RPID RPID , 
+/*角色编号*/ t0.RPROID RPROID , 
+/*权限编号*/ t0.RPPRID RPPRID , 
+/*角色名称*/ t1.RONAME RPRONAME , 
+/*权限名称*/ t2.PRNAME RPPRNAME FROM F00941 t0
+LEFT JOIN (SELECT ROID, RONAME FROM V0094) t1 ON t1.ROID = t0.RPROID
+LEFT JOIN (SELECT PRID, PRNAME FROM V0095) t2 ON t2.PRID = t0.RPPRID;

@@ -1,0 +1,13 @@
+/**
+     * ID: room
+     * Description: 机房
+     */
+CREATE VIEW V1200 AS SELECT 
+/*机房序号*/ t0.RMID RMID , 
+/*机房短号*/ t0.RMSERIAL RMSERIAL , 
+/*JDE地址号*/ t0.RMAN8 RMAN8 , 
+/*机房名称*/ t0.RMNAME RMNAME , 
+/*班组序号*/ t0.RMCWID RMCWID , 
+/*班组名称*/ ? RMCWNAME , 
+/*工作中心编号*/ ? RMWCMCU , 
+/*工作中心名称*/ ? RMWCDL01 FROM F1200 t0;

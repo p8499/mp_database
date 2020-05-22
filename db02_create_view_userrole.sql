@@ -1,0 +1,12 @@
+/**
+     * ID: userrole
+     * Description: 用户角色关系
+     */
+CREATE VIEW V00921 AS SELECT 
+/*序号*/ t0.URID URID , 
+/*用户序号*/ t0.URUSID URUSID , 
+/*角色编号*/ t0.URROID URROID , 
+/*用户姓名*/ t1.USNAME URUSNAME , 
+/*角色名称*/ t2.RONAME URRONAME FROM F00921 t0
+LEFT JOIN (SELECT USID, USNAME FROM V0092) t1 ON t1.USID = t0.URUSID
+LEFT JOIN (SELECT ROID, RONAME FROM V0094) t2 ON t2.ROID = t0.URROID;

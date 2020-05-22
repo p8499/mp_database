@@ -1,0 +1,8 @@
+/**
+ * ID: role
+ * Description: 角色
+ */
+CREATE TABLE F0094 ( 
+/*角色编号*/ ROID NVARCHAR2(4) , 
+/*角色名称*/ RONAME NVARCHAR2(16) );
+ALTER TABLE F0094 ADD CONSTRAINT F0094_PRIMARY PRIMARY KEY ( ROID );

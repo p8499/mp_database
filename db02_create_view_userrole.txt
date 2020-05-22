@@ -1,0 +1,10 @@
+/**
+     * ID: userrole
+     * Description: 用户角色关系
+     */
+CREATE VIEW V00921 AS SELECT 
+/*序号*/ t0.URID URID , 
+/*用户序号*/ t0.URUSID URUSID , 
+/*角色编号*/ t0.URROID URROID , 
+/*用户姓名*/ ? URUSNAME , 
+/*角色名称*/ ? URRONAME FROM F00921 t0;

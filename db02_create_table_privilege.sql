@@ -1,0 +1,8 @@
+/**
+ * ID: privilege
+ * Description: 权限
+ */
+CREATE TABLE F0095 ( 
+/*权限编号*/ PRID NVARCHAR2(4) , 
+/*权限名称*/ PRNAME NVARCHAR2(16) );
+ALTER TABLE F0095 ADD CONSTRAINT F0095_PRIMARY PRIMARY KEY ( PRID );

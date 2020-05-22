@@ -1,0 +1,15 @@
+/**
+     * ID: room
+     * Description: 机房
+     */
+CREATE VIEW V1200 AS SELECT 
+/*机房序号*/ t0.RMID RMID , 
+/*机房短号*/ t0.RMSERIAL RMSERIAL , 
+/*JDE地址号*/ t0.RMAN8 RMAN8 , 
+/*机房名称*/ t0.RMNAME RMNAME , 
+/*班组序号*/ t0.RMCWID RMCWID , 
+/*班组名称*/ t1.CWNAME RMCWNAME , 
+/*工作中心编号*/ t2.WCMCU RMWCMCU , 
+/*工作中心名称*/ t2.WCDL01 RMWCDL01 FROM F1200 t0
+LEFT JOIN (SELECT CWID, CWNAME, CWWCMCU FROM V3003) t1 ON t1.CWID = t0.RMCWID
+LEFT JOIN (SELECT WCMCU, WCDL01 FROM V3000) t2 ON t2.WCMCU = t1.CWWCMCU;

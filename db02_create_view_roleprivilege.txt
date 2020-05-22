@@ -1,0 +1,10 @@
+/**
+     * ID: roleprivilege
+     * Description: 角色权限关系
+     */
+CREATE VIEW V00941 AS SELECT 
+/*序号*/ t0.RPID RPID , 
+/*角色编号*/ t0.RPROID RPROID , 
+/*权限编号*/ t0.RPPRID RPPRID , 
+/*角色名称*/ ? RPRONAME , 
+/*权限名称*/ ? RPPRNAME FROM F00941 t0;

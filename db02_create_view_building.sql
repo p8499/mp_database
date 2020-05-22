@@ -1,0 +1,13 @@
+/**
+     * ID: building
+     * Description: 建筑物
+     */
+CREATE VIEW V3002 AS SELECT 
+/*建筑物编号*/ t0.MCMCU MCMCU , 
+/*建筑物名称*/ t0.MCDL01 MCDL01 , 
+/*楼盘编号*/ t0.MCBPMCU MCBPMCU , 
+/*楼盘名称*/ t1.BPDL01 MCBPDL01 , 
+/*工作中心编号*/ t2.WCMCU MCWCMCU , 
+/*工作中心名称*/ t2.WCDL01 MCWCDL01 FROM F3002 t0
+LEFT JOIN (SELECT BPMCU, BPDL01, BPWCMCU FROM V3001) t1 ON t1.BPMCU = t0.MCBPMCU
+LEFT JOIN (SELECT WCMCU, WCDL01 FROM V3000) t2 ON t2.WCMCU = t1.BPWCMCU;
