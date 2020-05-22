@@ -1,0 +1,13 @@
+/**
+     * ID: templateprocedure
+     * Description: 模板规程
+     */
+CREATE VIEW V2002 AS SELECT 
+/*规程序号*/ t0.TPID TPID , 
+/*模板序号*/ t0.TPTTID TPTTID , 
+/*顺序*/ t0.TPSEQ TPSEQ , 
+/*规程描述*/ t0.TPDESCRIPTION TPDESCRIPTION , 
+/*照片必须性*/ t0.TPPHOTO TPPHOTO , 
+/*模板名称*/ ? TPTTNAME , 
+/*模板类型*/ ? TPTTTYPE , 
+/*测量数*/ ? TPSIZE FROM F2002 t0;

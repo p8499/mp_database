@@ -28,4 +28,10 @@
 
 @db02_create_table_enumtype.sql; 
 
-@db02_create_table_enumtypevalue.sql;
+@db02_create_table_enumtypevalue.sql; 
+
+@db02_create_table_template.sql; 
+
+@db02_create_table_templateprocedure.sql; 
+
+@db02_create_table_templatemeasurements.sql;

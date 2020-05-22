@@ -1,3 +1,9 @@
+@db02_drop_view_templatemeasurements.sql; 
+
+@db02_drop_view_templateprocedure.sql; 
+
+@db02_drop_view_template.sql; 
+
 @db02_drop_view_enumtypevalue.sql; 
 
 @db02_drop_view_enumtype.sql; 

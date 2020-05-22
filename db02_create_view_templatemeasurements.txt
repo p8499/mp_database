@@ -1,0 +1,17 @@
+/**
+     * ID: templatemeasurements
+     * Description: 模板测量
+     */
+CREATE VIEW V2003 AS SELECT 
+/*测量序号*/ t0.TSID TSID , 
+/*规程序号*/ t0.TSTPID TSTPID , 
+/*排序*/ t0.TSSEQ TSSEQ , 
+/*测量名称*/ t0.TSNAME TSNAME , 
+/*枚举类型编号*/ t0.TSETID TSETID , 
+/*照片必须性*/ t0.TSPHOTO TSPHOTO , 
+/*模板序号*/ ? TSTTID , 
+/*模板名称*/ ? TSTTNAME , 
+/*模板类型*/ ? TSTTTYPE , 
+/*规程排序*/ ? TSTPSEQ , 
+/*规程描述*/ ? TSTPDESCRIPTION , 
+/*规程照片可选性*/ ? TSTPPHOTO FROM F2003 t0;
