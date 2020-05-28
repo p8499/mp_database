@@ -34,4 +34,4 @@
 
 @db02_create_table_templateprocedure.sql; 
 
-@db02_create_table_templatemeasurements.sql;
+@db02_create_table_templatemeasurement.sql;

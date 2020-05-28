@@ -1,5 +1,5 @@
 /**
-     * ID: templatemeasurements
+     * ID: templatemeasurement
      * Description: 模板测量
      */
 CREATE VIEW V2003 AS SELECT 
@@ -8,6 +8,9 @@ CREATE VIEW V2003 AS SELECT
 /*排序*/ t0.TSSEQ TSSEQ , 
 /*测量名称*/ t0.TSNAME TSNAME , 
 /*枚举类型编号*/ t0.TSETID TSETID , 
+/*最小值*/ t0.TSMIN TSMIN , 
+/*最大值*/ t0.TSMAX TSMAX , 
+/*单位*/ t0.TSUNIT TSUNIT , 
 /*照片必须性*/ t0.TSPHOTO TSPHOTO , 
 /*模板序号*/ ? TSTTID , 
 /*模板名称*/ ? TSTTNAME , 

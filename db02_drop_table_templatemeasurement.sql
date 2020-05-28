@@ -1,5 +1,5 @@
 /**
- * ID: templatemeasurements
+ * ID: templatemeasurement
  * Description: 模板测量
  */
 DROP SEQUENCE F2003_TSID;

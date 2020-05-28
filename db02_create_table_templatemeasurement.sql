@@ -1,5 +1,5 @@
 /**
- * ID: templatemeasurements
+ * ID: templatemeasurement
  * Description: 模板测量
  */
 CREATE TABLE F2003 ( 
@@ -8,6 +8,9 @@ CREATE TABLE F2003 (
 /*排序*/ TSSEQ NUMBER(2,0) , 
 /*测量名称*/ TSNAME NVARCHAR2(12) , 
 /*枚举类型编号*/ TSETID NVARCHAR2(4) , 
+/*最小值*/ TSMIN NUMBER(12,4) , 
+/*最大值*/ TSMAX NUMBER(12,4) , 
+/*单位*/ TSUNIT NVARCHAR2(4) , 
 /*照片必须性*/ TSPHOTO NUMBER(1,0) );
 ALTER TABLE F2003 ADD CONSTRAINT F2003_PRIMARY PRIMARY KEY ( TSID );
 ALTER TABLE F2003 ADD CONSTRAINT F2003_UNIQUE_1 UNIQUE ( TSTPID , TSSEQ );

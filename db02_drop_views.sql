@@ -1,4 +1,4 @@
-@db02_drop_view_templatemeasurements.sql; 
+@db02_drop_view_templatemeasurement.sql; 
 
 @db02_drop_view_templateprocedure.sql; 
 
